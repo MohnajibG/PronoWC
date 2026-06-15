@@ -1,0 +1,84 @@
+/* Fonts: use @import for Google Fonts; move any <link rel="preconnect"> tags to your HTML <head> */
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import "tailwindcss";
+
+:root {
+  --color-primary: #f59e0b;
+  --color-blue: #1d4ed8;
+  --color-green: #16a34a;
+  --color-red: #dc2626;
+  --color-dark: #0b0f1a;
+  --color-light: #f8fafc;
+  --color-card: #111827;
+
+  --font-heading: "Archivo Black", sans-serif;
+  --font-body: "Outfit  ", sans-serif;
+}
+
+html {
+  font-family: var(--font-body);
+  background: var(--color-dark);
+  color: var(--color-light);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* TITRES */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
+/* LINKS */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* CONTAINER GLOBAL */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* CARDS */
+.card {
+  background: rgba(17, 24, 39, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+}
+
+/* BUTTON PRIMARY */
+.btn-primary {
+  background: var(--color-primary);
+  color: black;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+}
+
+/* BUTTON OUTLINE */
+.btn-outline {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 12px 18px;
+  border-radius: 12px;
+  transition: 0.2s;
+}
+
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
